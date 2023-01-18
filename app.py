@@ -7,7 +7,7 @@ st.sidebar.title("最適化パラメーター")
 def objective_function(x):
     return x**2 +x
 
-x_min = st.sidebar.number_imput("xの最小値", value=-10.0, step=0.1)
+x_min = st.sidebar.number_input("xの最小値", value=-10.0, step=0.1)
 x_max = st.sidebar.number_input("xの最大値", value=10.0, step=0.1)
 
 algorithm = st.sidebar.selectbox("最適化アルゴリズム", ["BFGS", "L-BFGS-B", "CG", "Newton-CG", "TNC"])
